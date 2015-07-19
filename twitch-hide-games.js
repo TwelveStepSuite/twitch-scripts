@@ -20,26 +20,26 @@ function hideGames() {
 	for (index = 700; index < 90000; index++) {
 		var stream = document.body.querySelector('#ember'+index);
 		if (stream != null) {
-      if (stream.parentNode.className == 'js-directory tse-content') {
-          continue;
-      }
-      if (stream.parentNode.parentNode.className == 'js-directory tse-content') {
-          continue;
-      }
-      if (stream.parentNode.className == 'js-streams streams items') {
-          continue;
-      }
-      
-      var str = stream.querySelector('.boxart');
-      if (str != null) {
-          str = str.toString();
-          for (var i = 0; i < array.length; i++) {
-              if (str.indexOf(array[i]) > -1) {
-                  stream.style.display = "none";
-                  break;
-              }
-          }
-      }
+		      if (stream.parentNode.className == 'js-directory tse-content') {
+		          continue;
+		      }
+		      if (stream.parentNode.parentNode.className == 'js-directory tse-content') {
+		          continue;
+		      }
+		      if (stream.parentNode.className == 'js-streams streams items') {
+		          continue;
+		      }
+		      
+		      var str = stream.querySelector('.boxart');
+		      if (str != null) {
+		          str = str.toString();
+		          for (var i = 0; i < array.length; i++) {
+		              if (str.indexOf(array[i]) > -1) {
+		                  stream.style.display = "none";
+		                  break;
+		              }
+		          }
+		      }
 		}
 	}
 }
