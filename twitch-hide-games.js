@@ -54,7 +54,7 @@ function init() {
 
 function keydown(e){
 	if (e.ctrlKey) {
-    hideGames();
+		hideGames();
 	}
 }
 
